@@ -17,7 +17,7 @@ public class VehicleTest {
 
     @Before
     public void before(){
-        vehicle = new Vehicle(Type.HATCHBACK, Make.FORD, Model.FIESTA, 9999.99, "red");
+        vehicle = new Vehicle(Type.HATCHBACK, "Ford", "Fiesta", 9999.99, "red");
     }
 
     @Test
@@ -27,12 +27,12 @@ public class VehicleTest {
 
     @Test
     public void hasMake(){
-        assertEquals(Make.FORD, vehicle.getMake());
+        assertEquals("Ford", vehicle.getMake());
     }
 
     @Test
     public void hasModel(){
-        assertEquals(Model.FIESTA, vehicle.getModel());
+        assertEquals("Fiesta", vehicle.getModel());
     }
 
     @Test

@@ -1,17 +1,16 @@
 import com.sun.org.apache.xpath.internal.operations.Mod;
-import eNums.Make;
-import eNums.Model;
+
 import eNums.Type;
 
 public class Vehicle {
     
     private Type type;
-    private Make make;
-    private Model model;
+    private  String make;
+    private String model;
     private double price;
     private String colour;
     
-    public Vehicle(Type type, Make make, Model model, double price, String colour){
+    public Vehicle(Type type, String make, String model, double price, String colour){
         this.type = type;
         this.make = make;
         this.model = model;
@@ -23,11 +22,11 @@ public class Vehicle {
         return type;
     }
 
-    public Make getMake() {
+    public String getMake() {
         return make;
     }
 
-    public Model getModel() {
+    public String getModel() {
         return model;
     }
 
